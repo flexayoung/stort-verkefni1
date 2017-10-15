@@ -1,10 +1,12 @@
 // breytur fyrir mikið notaðar stærðir
 $max-width: 1200px;
 $gutter: 20px;
+$font-size: 16px;
 
 /* setjum box-sizing: border-box; á allt */
 html { /* stylelint-disable-line */
   box-sizing: border-box;
+
 }
 
 *, *:before, *:after { /* stylelint-disable-line */
@@ -38,17 +40,26 @@ img { /* stylelint-disable-line */
 main { /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size; 
 
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 }
 
-@import "../css/scss/grid";
-/*
+@import "scss/grid";
+//@import "scss/navbar";
 @import "scss/header";
+/*
 @import "scss/heading";
 @import "scss/text";
 @import "scss/button";
 @import "scss/card";
 @import "scss/cardlist";
+
+
+
+
+
+

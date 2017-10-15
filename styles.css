@@ -1,166 +1,38 @@
-@charset "UTF-8";
-/* setjum box-sizing: border-box; á allt */
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  /* stylelint-disable-line */
-  box-sizing: inherit;
-  /* fjarlægjum margin og padding */
-  padding: 0;
-  margin: 0; }
-
-html {
-  /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
-  font-family: Lato, helvetica, arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5; }
-  @media (min-width: 1200px) {
-    html {
-      margin: 0; } }
-
-img {
-  /* stylelint-disable-line */
-  max-width: 100%; }
-
-main {
-  /* stylelint-disable-line */
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow-x: hidden; }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: 20px;
-  margin-left: -10px; }
-
-.col {
-  padding-right: 10px;
-  padding-left: 10px; }
-  .col-12 {
-    width: 100%; }
-  .col-8 {
-    width: 66.66667%; }
-  .col-4 {
-    width: 33.33333%; }
-  @media (max-width: 599px) {
-    .col-sm-12 {
-      width: 100%; } }
-
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-header {
-  display: flex;
-  font-family: Roboto Slab;
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  height: 50px; }
-
-.heading {
-  width: 100%;
-  padding: 0;
-  font-family: Merriweather, georgia, serif;
-  font-size: 2rem;
-  border: none;
-  /* stylelint-disable-line */ }
-  .heading--one {
-    font-size: 3rem; }
-  .heading--two {
-    font-size: 2rem; }
-  .heading--three {
-    font-size: 1rem; }
-
-.button {
-  display: inline-block;
-  width: 100%;
-  max-width: 256px;
-  padding: 10px 5px;
-  margin: 0;
-  overflow: hidden;
-  font-family: Lato, helvetica, arial, sans-serif;
-  font-size: 1rem;
-  color: #eee;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #666;
-  border: 1px solid #666;
-  border-radius: 4px;
-  transition: background-color 500ms ease; }
-  .button:hover {
-    color: #eee;
-    background-color: #333; }
-  .button--inverted {
-    color: #666;
-    background-color: #eee; }
-  .button--inverted:hover {
-    color: #333;
-    background-color: #ccc; }
-  .button--disabled, .button--disabled:hover {
-    color: #999;
-    background-color: #eee;
-    border-color: #eee; }
-
-.card {
-  width: 100%;
-  min-width: 200px;
-  max-width: 800px;
-  overflow: hidden;
-  background-color: #eee;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  transition: background-color 500ms ease; }
-  @media (min-width: 600px) {
-    .card--wide {
-      display: flex; }
-    .card--wide .card__content {
-      align-items: flex-start; }
-    .card--wide .card__img {
-      min-width: 400px;
-      height: 100%;
-      object-fit: cover; } }
-  .card :hover {
-    background-color: #ddd; }
-  .card__heading {
+  padding-bottom: 20px;
+  height: 400px;
+  width: 100%; }
+  .header .navbar {
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
     width: 100%;
-    margin-bottom: 15px;
-    font-family: Merriweather, georgia, serif;
-    font-size: 1.5rem;
-    word-break: break-word; }
-  .card__content {
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-    align-items: center; }
-  .card__text {
-    margin-bottom: 30px; }
-  .card__img {
-    width: 100%;
-    min-width: 200px;
-    max-width: 100%; }
-
-.cardlist {
-  max-width: 72rem;
-  margin: 0 auto; }
-  .cardlist__row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -10px;
-    margin-bottom: 20px;
-    margin-left: -10px; }
-  .cardlist__col {
-    width: 100%;
-    padding: 10px; }
-  @media (min-width: 600px) {
-    .cardlist__col {
-      width: 50%; } }
+    /* Full width */
+    display: block; }
+    .header .navbar .home {
+      float: left;
+      color: #f2f2f2;
+      padding: 14px 16px;
+      font-family: 'Roboto Slab', serif;
+      font-size: 21px;
+      text-decoration: none; }
+    .header .navbar .right {
+      float: right;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      margin-right: 40px;
+      padding: 14px 16px; }
+    .header .navbar .about {
+      text-align: center;
+      text-decoration: none;
+      color: #f2f2f2; }
+    .header .navbar .buy {
+      text-align: center;
+      padding: 5px;
+      margin-right: 15px;
+      text-decoration: none;
+      color: #f2f2f2;
+      border-radius: 10px;
+      background-color: #585C57; }
