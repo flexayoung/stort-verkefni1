@@ -79,10 +79,10 @@ main {
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
+    opacity: 0.8;
     width: 100%;
     /* Full width */
-    display: block;
-    border: 2px solid yellow; }
+    display: block; }
     .header .navbar .home {
       float: left;
       color: #f2f2f2;
