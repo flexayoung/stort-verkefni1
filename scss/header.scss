@@ -1,14 +1,21 @@
+
+
 .header {
-  padding-bottom: 20px;
-  height: 400px;
-  width: 100%;
+  display: flex;
+  max-width: $max-width;
+  min-height: 200px;
+  margin: 0 auto $gutter;
+  align-items: center;
+
 
   .navbar {
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    display: block;
+     top: 0; /* Position the navbar at the top of the page */
+
+     width: 100%; /* Full width */
+      display: block;
+      border: 2px solid yellow;
 
     .home {
         float: left;
@@ -25,7 +32,7 @@
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
 
-        margin-right: 40px;
+        //margin-right: 40px;
         padding: 14px 16px;       
     }
 
@@ -39,7 +46,7 @@
     .buy {
         text-align: center;
         padding: 5px;
-        margin-right: 15px;
+       // margin-right: 15px;
         text-decoration: none;
         color: #f2f2f2;  
         
@@ -47,6 +54,84 @@
         background-color: #585C57;
 
     }
-}
+
+  
+
+   }
 
 }
+
+
+/*
+.header {
+ 	height: 100vh;
+ 	top: 0;
+ 	width:100vw;
+  border: 1px solid black;
+  background-color: green;
+  margin-top: 0px;
+  overflow: hidden;
+
+  
+  position: relative;
+   position: absolute;
+   overflow: hidden;
+
+  padding-bottom: 20px;
+  height: 400px;
+  max-height: 100%;
+  width: 100%;
+  max-width: &max-width;
+
+  .navbar {
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+	 /*  top: 0; /* Position the navbar at the top of the page */
+  /*   width: 100%; /* Full width */
+  /*    display: block;
+     margin-left: none;
+  
+
+
+
+
+    .home {
+        float: left;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 21px;
+        text-decoration: none;
+
+    }
+
+    .right { 
+        float: right;
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+
+        //margin-right: 40px;
+        padding: 14px 16px;       
+    }
+
+     .about {
+        text-align: center;
+        text-decoration: none;
+        color: #f2f2f2;  
+
+    }
+
+    .buy {
+        text-align: center;
+        padding: 5px;
+       // margin-right: 15px;
+        text-decoration: none;
+        color: #f2f2f2;  
+        
+        border-radius: 10px;
+        background-color: #585C57;
+
+    }
+}*/
+
+

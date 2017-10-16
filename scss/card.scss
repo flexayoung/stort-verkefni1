@@ -2,6 +2,7 @@
   width: 100%;
   min-width: 200px;
   max-width: 800px;
+
   overflow: hidden;
 
   background-color: #eee;
@@ -11,23 +12,7 @@
 
   transition: background-color 500ms ease;
 
-  @media (min-width: 600px) {
-    &--wide {
-      display: flex;
-    }
-
-    &--wide &__content {
-      align-items: flex-start;
-    }
-
-    &--wide &__img {
-      min-width: 400px;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  :hover {
+  &:hover {
     background-color: #ddd;
   }
 
@@ -56,5 +41,25 @@
     width: 100%;
     min-width: 200px;
     max-width: 100%;
+  }
+
+  &--wide {
+    @media (min-width: 600px) {
+      display: flex;
+    }
+  }
+
+  &--wide &__content {
+    @media (min-width: 600px) {
+      align-items: flex-start;
+    }
+  }
+
+  &--wide &__img {
+    @media (min-width: 600px) {
+      min-width: 400px;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

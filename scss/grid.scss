@@ -24,21 +24,45 @@
     @include columns(8);
   }
 
+  &-6 {
+    @include columns(6);
+  }
+
   &-4 {
     @include columns(4);
   }
 
-  // todo útfæra rest af grid
+  &-3 {
+    @include columns(3);
+  }
 
   &-sm {
     @media (max-width: 599px) {
       &-12 {
         @include columns(12);
       }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-3 {
+        @include columns(3);
+      }
     }
   }
 }
 
 .offset {
-  // todo útfæra offset
+  &-2 {
+    margin-left: (2 / 12 * 100) * 1%; // reiknað einsog að ofan
+  }
+
+  &-sm {
+    @media (max-width: 599px) {
+      &-0 {
+        margin-left: 0;
+      }
+    }
+  }
 }
