@@ -44,6 +44,49 @@ main { /* stylelint-disable-line */
   overflow-x: hidden;
 }
 
+blockquote {
+  font-style: italic;
+  font-weight:bold;
+  font-size: 24px;
+  margin-left: (1/12*100) * 1%;
+  margin-top: (0.5/12*100) * 1%;
+  float:right;
+  max-width:(6/12*100) * 1%;
+
+
+}
+blockquote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: (1/12*100) * 1%;
+  margin-top: (0.5/12*100) * 1%;
+  margin-bottom:(0.5/12*100) * 1% ;
+  float:right;
+  max-width:(6/12*100) * 1%;
+}
+
+@media (max-width:400px) {
+  blockquote {
+    min-width:100%;
+  }
+}
+
+.header {
+  &-um {
+    background-image: url(myndir/bg-subpage.jpg);
+    background-size: cover;
+  }
+}
+
+main {
+  .grid:first-child {
+  margin-top:(0.5/12*100) * 1%;
+  }
+}
+
+
+
 @import "scss/grid";
 @import "scss/header";
 @import "scss/heading";
