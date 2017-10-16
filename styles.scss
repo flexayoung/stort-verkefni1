@@ -77,11 +77,18 @@ blockquote {
     background-image: url(myndir/bg-subpage.jpg);
     background-size: cover;
   }
+  &-home {
+    background-image: url(myndir/bg.jpg);
+    background-size: cover;
+  }
 }
 
 .heading {
   &-um {
     word-wrap: break-word;
+    margin-left:$gutter;
+    color:#fff;
+    font-size: 3rem;
   }
 }
 
