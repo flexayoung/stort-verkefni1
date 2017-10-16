@@ -3,9 +3,10 @@
 .header {
   display: flex;
   max-width: $max-width;
-  min-height: 200px;
-  margin: 0 auto $gutter;
+  margin: 0 auto;
+  min-height:500px;
   align-items: center;
+
 
 
   .navbar {
@@ -13,7 +14,7 @@
     position: fixed; /* Set the navbar to fixed position */
      top: 0; /* Position the navbar at the top of the page */
      opacity: 0.8;
-     width: 100%; /* Full width */
+     width: $max-width; /* Full width */
       display: block;
 
     .home {
@@ -26,19 +27,19 @@
 
     }
 
-    .right { 
+    .right {
         float: right;
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
 
         //margin-right: 40px;
-        padding: 14px 16px;       
+        padding: 14px 16px;
     }
 
      .about {
         text-align: center;
         text-decoration: none;
-        color: #f2f2f2;  
+        color: #f2f2f2;
 
     }
 
@@ -47,14 +48,14 @@
         padding: 5px;
        // margin-right: 15px;
         text-decoration: none;
-        color: #f2f2f2;  
-        
+        color: #f2f2f2;
+
         border-radius: 10px;
         background-color: #585C57;
 
     }
 
-  
+
 
    }
 
@@ -71,7 +72,7 @@
   margin-top: 0px;
   overflow: hidden;
 
-  
+
   position: relative;
    position: absolute;
    overflow: hidden;
@@ -89,7 +90,7 @@
   /*   width: 100%; /* Full width */
   /*    display: block;
      margin-left: none;
-  
+
 
 
 
@@ -104,19 +105,19 @@
 
     }
 
-    .right { 
+    .right {
         float: right;
         display: inline-block;
         font-family: 'Open Sans', sans-serif;
 
         //margin-right: 40px;
-        padding: 14px 16px;       
+        padding: 14px 16px;
     }
 
      .about {
         text-align: center;
         text-decoration: none;
-        color: #f2f2f2;  
+        color: #f2f2f2;
 
     }
 
@@ -125,12 +126,10 @@
         padding: 5px;
        // margin-right: 15px;
         text-decoration: none;
-        color: #f2f2f2;  
-        
+        color: #f2f2f2;
+
         border-radius: 10px;
         background-color: #585C57;
 
     }
 }*/
-
-

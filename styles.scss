@@ -119,6 +119,45 @@ main {
   }
 }
 
+.nav {
+  max-width: $max-width;
+  width: 100%;
+  background-color:#000;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+  padding: 0 $gutter 5px $gutter ;
+
+
+  a {
+    padding:5px;
+    color:#fff;
+    font-family: 'Roboto Slab', serif;
+    text-decoration:none;
+    border-radius: 5px;
+    }
+  }
+
+.nav a:first-child {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.nav a:nth-child(2) {
+  float:right;
+  transition: background 500ms;
+  background-color: #585C57;
+  border: 1px solid #585C57;
+}
+
+.nav a:hover:nth-child(2) {
+  background: #000;
+}
+
+.nav a:last-child {
+  float:right;
+}
+
 
 
 
