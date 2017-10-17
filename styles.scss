@@ -21,8 +21,6 @@ html { /* stylelint-disable-line */
   // ruglar líka ekki í grid overlay
   margin-right: $gutter;
   margin-left: $gutter;
-
-  font-family: Lato, helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 
@@ -72,26 +70,6 @@ blockquote {
   }
 }
 
-.header {
-  &-um {
-    background-image: url(myndir/bg-subpage.jpg);
-    background-size: cover;
-  }
-  &-home {
-    background-image: url(myndir/bg.jpg);
-    background-size: cover;
-  }
-}
-
-.heading {
-  &-um {
-    word-wrap: break-word;
-    margin-left:$gutter;
-    color:#fff;
-    font-size: 3rem;
-  }
-}
-
 main {
   .grid:first-child {
   margin-top:(0.5/12*100) * 1%;
@@ -126,52 +104,15 @@ main {
   }
 }
 
-.nav {
-  max-width: $max-width;
-  width: 100%;
-  background-color:#000;
-  position: fixed;
-  top: 0;
-  opacity: 0.8;
-  padding: 0 $gutter 5px $gutter ;
-
-
-  a {
-    padding:5px;
-    color:#fff;
-    font-family: 'Roboto Slab', serif;
-    text-decoration:none;
-    border-radius: 5px;
-    }
-  }
-
-.nav a:first-child {
-  font-weight: bold;
-  font-size: 21px;
-}
-
-.nav a:nth-child(2) {
-  float:right;
-  transition: background 500ms;
-  background-color: #585C57;
-  border: 1px solid #585C57;
-}
-
-.nav a:hover:nth-child(2) {
-  background: #000;
-}
-
-.nav a:last-child {
-  float:right;
-}
 
 
 
 
-@import "scss/grid";
+@import "scss/grid"; 
+@import "scss/nav";
 @import "scss/header";
 @import "scss/heading";
 @import "scss/text";
 @import "scss/button";
 @import "scss/card";
-@import "scss/cardlist";
+@import "scss/cardlist"; 

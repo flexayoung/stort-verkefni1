@@ -1,0 +1,42 @@
+.nav {
+  max-width: $max-width;
+  width: 100%;
+  background-color:#000;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+  padding: 5px $gutter 5px $gutter ;
+
+
+  a {
+    padding:5px;
+    color:#fff;
+    font-family: 'Roboto Slab', serif;
+    text-decoration:none;
+    border-radius: 5px;
+    }
+  }
+
+.nav a:first-child {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.nav a:nth-child(2) {
+  float:right;
+  transition: background 500ms;
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: #585C57;
+}
+
+.nav a:hover:nth-child(2) {
+  background: #000;
+}
+
+.nav a:last-child {
+  float:right;
+  font-family: 'Open Sans', sans-serif;
+
+
+}
