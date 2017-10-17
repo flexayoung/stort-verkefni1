@@ -20,7 +20,8 @@
     </header>
     <main>
       <form action="#">
-        <fieldset>
+        <div id="paymentinfo">
+        <fieldset id="leftfieldset">
           <legend>Persónuupplýsingar</legend>
           <div class="field">
             <label for="name">Nafn:</label><br>
@@ -41,7 +42,7 @@
           </div>
           <div class="field">
             <label for="tel">Sími:</label><br>
-            <input type="tel" name="tel" id="tel">
+            <input type="text" name="tel" id="tel">
           </div>
           <div class="field">
             <label for="address">Heimilisfang:</label><br>
@@ -52,7 +53,7 @@
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="rightfieldset">
           <legend>Greiðsluupplýsingar</legend>
           <div class="field">
             <label for="payment">Greiða með:</label><br>
@@ -119,7 +120,9 @@
             </select>
           </div>
         </fieldset>
+        </div>
         <input type="submit" value="Panta" id="">
+        
       </form>
 
       <div class="row row-footer">

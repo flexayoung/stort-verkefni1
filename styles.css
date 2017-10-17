@@ -381,3 +381,41 @@ main .grid:first-child {
       width: 50%;
       margin-right: 0;
       margin-left: 0; } }
+
+
+
+
+/* KAUPA.HTML */
+form {
+  width: 100%;
+}
+
+#paymentinfo {
+  overflow: auto;
+}
+form fieldset {
+  padding: 
+  float: left;
+  overflow: auto;
+  border-style: none;
+  width: 50%;
+}
+#leftfieldset {
+  padding: 0 9.5% 0 8.5%;
+
+}
+#rightfieldset {
+  padding: 0 8.5% 0 9.5%;
+}
+
+.field {
+
+}
+input[type=text], select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type=button] {
+
+}
