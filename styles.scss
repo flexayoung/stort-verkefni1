@@ -44,6 +44,130 @@ main { /* stylelint-disable-line */
   overflow-x: hidden;
 }
 
+blockquote {
+  font-style: italic;
+  font-weight:bold;
+  font-size: 24px;
+  margin-left: (1/12*100) * 1%;
+  margin-top: (0.5/12*100) * 1%;
+  float:right;
+  max-width:(6/12*100) * 1%;
+
+
+}
+blockquote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: (1/12*100) * 1%;
+  margin-top: (0.5/12*100) * 1%;
+  margin-bottom:(0.5/12*100) * 1% ;
+  float:right;
+  max-width:(6/12*100) * 1%;
+}
+
+@media (max-width:400px) {
+  blockquote {
+    min-width:100%;
+  }
+}
+
+.header {
+  &-um {
+    background-image: url(myndir/bg-subpage.jpg);
+    background-size: cover;
+  }
+  &-home {
+    background-image: url(myndir/bg.jpg);
+    background-size: cover;
+  }
+}
+
+.heading {
+  &-um {
+    word-wrap: break-word;
+    margin-left:$gutter;
+    color:#fff;
+    font-size: 3rem;
+  }
+}
+
+main {
+  .grid:first-child {
+  margin-top:(0.5/12*100) * 1%;
+  }
+}
+
+.row {
+  &-footer {
+    background-color:#333;
+    color:#fff;
+    padding-bottom:$gutter;
+
+  }
+}
+
+.col {
+  &-footer_left {
+    margin-left:(3/12*100) * 1%;
+    text-align: center;
+    padding-top:$gutter;
+  }
+  &-footer_right {
+    margin-right:(3/12*100) * 1%;
+    text-align:center;
+    padding: $gutter 0 $gutter 0;
+  }
+  &-footer {
+    border-top:1px solid #bebebe;
+    padding-top: $gutter;
+    text-align:center;
+    color: #d3d3d3;
+  }
+}
+
+.nav {
+  max-width: $max-width;
+  width: 100%;
+  background-color:#000;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+  padding: 0 $gutter 5px $gutter ;
+
+
+  a {
+    padding:5px;
+    color:#fff;
+    font-family: 'Roboto Slab', serif;
+    text-decoration:none;
+    border-radius: 5px;
+    }
+  }
+
+.nav a:first-child {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.nav a:nth-child(2) {
+  float:right;
+  transition: background 500ms;
+  background-color: #585C57;
+  border: 1px solid #585C57;
+}
+
+.nav a:hover:nth-child(2) {
+  background: #000;
+}
+
+.nav a:last-child {
+  float:right;
+}
+
+
+
+
 @import "scss/grid";
 @import "scss/header";
 @import "scss/heading";
