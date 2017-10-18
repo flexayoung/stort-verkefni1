@@ -286,7 +286,10 @@ main .grid:first-child {
 
 
 /* KAUPA.HTML */
+
 form {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   width: 100%;
   padding: 3em 0 3em 0;
 }
@@ -310,6 +313,7 @@ form fieldset {
 
 legend {
   padding-bottom: 0.5em;
+  font-size: 21px;
 }
 
 .field {
@@ -328,8 +332,44 @@ input[type=text] {
 }
 
 select {
+  padding: 4px;
+}
+#payment {
   width: 100%;
 }
-input[type=button] {
+#monthdiv, #yeardiv {
 
+  width: 50%;
+  float: left;
+}
+#monthdiv label, #yeardiv label {
+  width: 100%;
+}
+
+#monthdiv select, #yeardiv select {
+  width: 65%;
+  float: right;
+}
+
+#monthdiv {
+  padding-right: 10px;
+}
+
+#yeardiv {
+  padding-left: 10px;
+}
+
+input[type=submit] {
+  background-color: #747373;
+  border: none;
+  color: white;
+  padding: 10px 100px;
+  margin: 4px 2px;
+  cursor: pointer;
+    
+}
+
+#button {
+    text-align: center;
+    margin: auto;
 }

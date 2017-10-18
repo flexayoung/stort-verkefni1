@@ -59,7 +59,8 @@
             <label for="payment">Greiða með:</label><br>
             <select name="payment" id="payment">
               <option value="credit">Kreditkorti</option>
-              <option value="debit">Debitkorti</option>
+              <option value="transaction">Millifærslu</option>
+              <option value="cash">Reiðufé</option>
             </select>
           </div>
           <div class="field">
@@ -72,7 +73,7 @@
           </div>
           <div class="field">
             <label>Gildistími</label><br>
-            <div id="monthleft">
+            <div id="monthdiv">
               <label for="month">Mán</label>
               <select id="month">
                 <option value="1">01</option>
@@ -89,7 +90,7 @@
                 <option value="12">12</option>
               </select>
             </div>
-            <div id="yearright"> 
+            <div id="yeardiv"> 
               <label for="year">Ár</label>
               <select id="year">
                 <option value="2017">2017</option>
@@ -101,7 +102,9 @@
           </div>
         </fieldset>
         </div>
-        <input type="submit" value="Panta" id="">
+        <div id="button">
+          <input type="submit" value="Panta" id="">
+        </div>
         
       </form>
       <footer>
