@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="grid.css">
   </head>
   <body>
     <header class="header header-um">
@@ -29,9 +28,9 @@
           </div>
           <div class="field">
             <label for="social">Kennitala:</label><br>
-            <input type="text" name="social" id="social">
+            <input type="text" name="social" id="social" placeholder='123456-7890'>
           </div>
-          <div class="field">
+          <div class="field check">
             <laber for="radio">Kyn:</labe><br>
               <input type="radio" name="gender" id="female" value="female">
               <label for="female">Kona</label><br>
@@ -42,14 +41,15 @@
           </div>
           <div class="field">
             <label for="tel">Sími:</label><br>
-            <input type="text" name="tel" id="tel">
+            <input type="text" name="tel" id="tel" placeholder='+354 812 3456'>
           </div>
           <div class="field">
             <label for="address">Heimilisfang:</label><br>
             <input type="text" name="address" id="address">
           </div>
-          <div class="field">
-            <input type="checkbox" name="mailing" id="mailing">Skrá mig á póstlista<br>
+          <div class="field check">
+            <input type="checkbox" name="mailing" id="mailing">
+            <label for="mailing">Skrá mig á póstlista</label><br>
           </div>
         </fieldset>
 
@@ -69,7 +69,7 @@
           </div>
           <div class="field">
             <label for="card">Kortanúmer:</label><br>
-            <input type="text" name="card" id="card" required>
+            <input type="text" name="card" id="card" placeholder='5999-9999-9999-9999   '>
           </div>
           <div class="field">
             <label>Gildistími</label><br>

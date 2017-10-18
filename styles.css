@@ -291,7 +291,7 @@ form {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   width: 100%;
-  padding: 3em 0 3em 0;
+  padding: 5em 0 5em 0;
 }
 
 #paymentinfo {
@@ -314,6 +314,7 @@ form fieldset {
 legend {
   padding-bottom: 0.5em;
   font-size: 21px;
+  font-weight: bold;
 }
 
 .field {
@@ -324,7 +325,10 @@ legend {
   width: 50%;
   float: left;
 }
+
 input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   width: 100%;
   border: 1px solid #ccc;
   padding: 8px;
@@ -332,7 +336,8 @@ input[type=text] {
 }
 
 select {
-  padding: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 #payment {
   width: 100%;
@@ -372,4 +377,8 @@ input[type=submit] {
 #button {
     text-align: center;
     margin: auto;
+}
+
+.check input {
+  margin: 5px 10px 7px 0;
 }
