@@ -288,15 +288,15 @@ main .grid:first-child {
 /* KAUPA.HTML */
 form {
   width: 100%;
+  padding: 3em 0 3em 0;
 }
 
 #paymentinfo {
   overflow: auto;
+
 }
 form fieldset {
-  padding: 
   float: left;
-  overflow: auto;
   border-style: none;
   width: 50%;
 }
@@ -308,13 +308,27 @@ form fieldset {
   padding: 0 8.5% 0 9.5%;
 }
 
-.field {
-
+legend {
+  padding-bottom: 0.5em;
 }
-input[type=text], select {
+
+.field {
+  padding: 0.5em 0 0.5em 0;
+}
+
+.field #monthleft, #yearright {
+  width: 50%;
+  float: left;
+}
+input[type=text] {
   width: 100%;
   border: 1px solid #ccc;
+  padding: 8px;
   border-radius: 4px;
+}
+
+select {
+  width: 100%;
 }
 input[type=button] {
 
