@@ -107,6 +107,13 @@ main {
       width: 50%; }
     .col-sm-3 {
       width: 25%; } }
+  @media (max-width: 399px) {
+    .col-exs-12 {
+      width: 100%; }
+    .col-exs-6 {
+      width: 50%; }
+    .col-exs-3 {
+      width: 25%; } }
 
 .offset-2 {
   margin-left: 16.66667%; }
@@ -286,10 +293,19 @@ main {
       margin-right: 0;
       margin-left: 0; } }
 
+.row-section1 {
+  margin-bottom: 100px; }
+
+.row-section2 {
+  justify-content: center; }
+
 .checkbox {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media (max-width: 599px) {
+    .checkbox {
+      margin-bottom: 100px; } }
 
 .hlutur-2 {
   height: 40px;
@@ -299,9 +315,6 @@ main {
   max-height: 100%;
   max-width: 100%;
   margin-right: 10px; }
-
-.profile-table {
-  margin-top: 150px; }
 
 .profile {
   width: 100%;

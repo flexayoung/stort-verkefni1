@@ -51,6 +51,22 @@
       }
     }
   }
+
+   &-exs {
+    @media (max-width: 399px) {
+      &-12 {
+        @include columns(12);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-3 {
+        @include columns(3);
+      }
+    }
+  }
 }
 
 .offset {
