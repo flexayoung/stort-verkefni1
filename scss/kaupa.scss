@@ -1,0 +1,122 @@
+form {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  padding: 5em 0 5em 0;
+}
+
+#paymentinfo {
+  overflow: auto;
+
+}
+form fieldset {
+  float: left;
+  border-style: none;
+  width: 50%;
+}
+
+#leftfieldset {
+  padding: 0 9.5% 0 8.5%;
+
+}
+#rightfieldset {
+  padding: 0 8.5% 0 9.5%;
+}
+
+legend {
+  padding-bottom: 0.5em;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.field {
+  padding: 0.5em 0 0.5em 0;
+}
+
+.field #monthleft, #yearright {
+  width: 50%;
+  float: left;
+}
+
+input[type=text] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+#payment {
+  width: 100%;
+}
+
+#monthdiv, #yeardiv {
+
+  width: 50%;
+  float: left;
+}
+
+#monthdiv label, #yeardiv label {
+  width: 100%;
+}
+
+#monthdiv select, #yeardiv select {
+  width: 65%;
+  float: right;
+}
+
+#monthdiv {
+  padding-right: 10px;
+}
+
+#yeardiv {
+  padding-left: 10px;
+}
+
+input[type=submit] {
+  background-color: #747373;
+  border: none;
+  color: white;
+  padding: 10px 100px;
+  margin: 4px 2px;
+  cursor: pointer;
+    
+}
+
+#button {
+    text-align: center;
+    margin: auto;
+}
+
+.check input {
+  margin: 5px 10px 7px 0;
+}
+
+@media (max-width: 700px) {
+
+  #leftfieldset, #rightfieldset {
+    padding: 0 5px 0 5px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #leftfieldset, #rightfieldset {
+    padding: 0 0 0 0;
+  }
+  
+  form fieldset {
+    width: 100%;
+    margin: 10px 0 10px 0;
+
+  }
+  #button {
+    margin-top: 20px;
+  }
+}
