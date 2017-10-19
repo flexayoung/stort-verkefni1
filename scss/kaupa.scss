@@ -19,7 +19,6 @@ form fieldset {
   padding: 0 9.5% 0 8.5%;
 
 }
-
 #rightfieldset {
   padding: 0 8.5% 0 9.5%;
 }
@@ -31,12 +30,13 @@ legend {
 }
 
 .field {
-  padding: 0.5em 0;
+  padding: 0.5em 0 0.5em 0;
 }
 
-.field #monthleft, #yearright {
-  float: left;
+.field #monthleft, 
+#yearright {
   width: 50%;
+  float: left;
 }
 
 input[type=text] {
@@ -57,18 +57,21 @@ select {
   width: 100%;
 }
 
-#monthdiv, #yeardiv {
-  float: left;
+#monthdiv, 
+#yeardiv {
   width: 50%;
+  float: left;
 }
 
-#monthdiv label, #yeardiv label {
+#monthdiv label, 
+#yeardiv label {
   width: 100%;
 }
 
-#monthdiv select, #yeardiv select {
-  float: right;
+#monthdiv select, 
+#yeardiv select {
   width: 65%;
+  float: right;
 }
 
 #monthdiv {
@@ -80,17 +83,18 @@ select {
 }
 
 input[type=submit] {
+  background-color: #747373;
+  border: none;
+  color: white;
   padding: 10px 100px;
   margin: 4px 2px;
-  background-color: #747373;
-  color: white;
-  border: none;
   cursor: pointer;
+    
 }
 
 #button {
-  margin: auto;
-  text-align: center;
+    text-align: center;
+    margin: auto;
 }
 
 .check input {
@@ -99,22 +103,24 @@ input[type=submit] {
 
 @media (max-width: 700px) {
 
-  #leftfieldset, #rightfieldset {
-    padding: 0 5px 0 5px;
+  #leftfieldset,
+  #rightfieldset {
+    padding: 0 5px;
   }
 }
 
 @media (max-width: 500px) {
 
-  #leftfieldset, #rightfieldset {
-    padding: 0 0 0 0;
+  #leftfieldset,
+  #rightfieldset {
+    padding: 0;
   }
-  
+
   form fieldset {
     width: 100%;
     margin: 10px 0 10px 0;
-
   }
+
   #button {
     margin-top: 20px;
   }
