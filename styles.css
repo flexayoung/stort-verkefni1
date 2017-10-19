@@ -163,10 +163,12 @@ main {
   align-items: center; }
   .header-um {
     background-image: url(myndir/bg-subpage.jpg);
+    background-position: center;
     background-size: cover; }
   .header-home {
     background-image: url(myndir/bg.jpg);
     min-height: 100vh;
+    background-position: center;
     background-size: cover;
     flex-direction: column;
     justify-content: center; }
