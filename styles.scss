@@ -34,8 +34,6 @@ img { /* stylelint-disable-line */
 }
 
 .quote {
-
-  blockquote {
   float: right;
   max-width: (6/12*100) * 1%;
   margin-top: (0.5/12*100) * 1%;
@@ -45,11 +43,12 @@ img { /* stylelint-disable-line */
   font-style: italic;
   font-weight: bold;
 }
-}
 
 @media (max-width: 400px) {
-  blockquote {
+  .quote {
+    blockquote {
     min-width: 100%;
+    }
   }
 }
 
