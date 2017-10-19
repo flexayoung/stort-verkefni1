@@ -1,27 +1,23 @@
 .header {
   display: flex;
   max-width: $max-width;
+  min-height: 500px;
   margin: 0 auto;
   margin-bottom: 100px;
-  min-height:500px;
   align-items: center;
 
   &-um {
-    background-image: url(myndir/bg-subpage.jpg);
+    background-image: url("myndir/bg-subpage.jpg");
     background-position: center;
     background-size: cover;
   }
+
   &-home {
-    background-image: url(myndir/bg.jpg);
-    min-height:100vh;
+    backgroungit stad-image: url("myndir/bg.jpg");
+    min-height: 100vh;
+    flex-direction: column;
     background-position: center;
     background-size: cover;
-    flex-direction: column;
     justify-content: center;
-
   }
-
-
 }
-
-

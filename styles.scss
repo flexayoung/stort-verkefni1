@@ -33,6 +33,23 @@ img { /* stylelint-disable-line */
   max-width: 100%;
 }
 
+blockquote {
+  float: right;
+  max-width: (6/12*100) * 1%;
+  margin-top: (0.5/12*100) * 1%;
+  margin-bottom: (0.5/12*100) * 1%;
+  margin-left: (1/12*100) * 1%;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  blockquote {
+    min-width: 100%;
+  }
+}
+
 main { /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
@@ -40,84 +57,45 @@ main { /* stylelint-disable-line */
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
-}
-
-blockquote {
-  font-style: italic;
-  font-weight:bold;
-  font-size: 24px;
-  margin-left: (1/12*100) * 1%;
-  margin-top: (0.5/12*100) * 1%;
-  float:right;
-  max-width:(6/12*100) * 1%;
-
-
-}
-blockquote {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 1.5em;
-  margin-left: (1/12*100) * 1%;
-  margin-top: (0.5/12*100) * 1%;
-  margin-bottom:(0.5/12*100) * 1% ;
-  float:right;
-  max-width:(6/12*100) * 1%;
-}
-
-@media (max-width:400px) {
-  blockquote {
-    min-width:100%;
-  }
-}
-
-main {
-
-  font-family: 'Roboto slab', serif;
+  font-family: "Roboto slab", serif;
 
   .grid:first-child {
-  margin-top:(0.5/12*100) * 1%;
+    margin-top: (0.5/12*100) * 1%;
   }
 }
 
 .row {
   &-footer {
-    background-color:#333;
-    color:#fff;
-    padding-bottom:$gutter;
-
+    padding-bottom: $gutter;
+    color: #fff;
+    background-color: #333;
   }
 }
 
 .col {
   &-footer_left {
-    margin-left:(3/12*100) * 1%;
-    text-align: center;
-    padding-top:$gutter;
-  }
-  &-footer_right {
-    margin-right:(3/12*100) * 1%;
-    text-align:center;
-    padding: $gutter 0 $gutter 0;
-  }
-  &-footer {
-    border-top:1px solid #bebebe;
     padding-top: $gutter;
-    text-align:center;
-    color: #d3d3d3;
+    margin-left: (3/12*100) * 1%;
+    text-align: center;
   }
 
+  &-footer_right {
+    padding: $gutter 0 $gutter 0;
+    margin-right: (3/12*100) * 1%;
+    text-align: center;
+  }
 
+  &-footer {
+    padding-top: $gutter;
+    color: #d3d3d3;
+    text-align: center;
+    border-top: 1px solid #bebebe;
+  }
 }
 
-
-
-@import "scss/grid"; 
+@import "scss/grid";
 @import "scss/nav";
 @import "scss/header";
-@import "scss/heading"; 
+@import "scss/heading";
 @import "scss/home";
-@import "scss/kaupa"; 
-
-
-
-
+@import "scss/kaupa";
