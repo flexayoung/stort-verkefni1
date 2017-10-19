@@ -130,27 +130,25 @@ main {
   padding: 5px 20px 5px 20px;
   background-color: #000;
   opacity: 0.8; }
-  .nav a {
+  .nav-link {
     padding: 5px;
     font-family: "Roboto Slab", serif;
     color: #fff;
     text-decoration: none;
     border-radius: 5px; }
+    .nav-link-kaupa {
+      float: right;
+      font-family: "Open Sans", sans-serif;
+      background-color: #585c57;
+      transition: background 500ms; }
+      .nav-link-kaupa:hover {
+        background: #000; }
 
-.nav a:first-child {
+.nav .nav-link:first-child {
   font-size: 21px;
   font-weight: bold; }
 
-.nav a:nth-child(2) {
-  float: right;
-  font-family: "Open Sans", sans-serif;
-  background-color: #585c57;
-  transition: background 500ms; }
-
-.nav a:hover:nth-child(2) {
-  background: #000; }
-
-.nav a:last-child {
+.nav .nav-link:last-child {
   float: right;
   font-family: "Open Sans", sans-serif; }
 
