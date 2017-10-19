@@ -3,24 +3,17 @@ form {
   padding: 5em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-
-  fieldset {
-    float: left;
-    border-style: none;
-    width: 50%;
-  }
 }
 
 #paymentinfo {
   overflow: auto;
-
 }
 
-/*form fieldset {
+form fieldset {
   float: left;
   border-style: none;
   width: 50%;
-}*/
+}
 
 #leftfieldset {
   padding: 0 9.5% 0 8.5%;

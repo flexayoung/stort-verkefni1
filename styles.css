@@ -172,16 +172,16 @@ main {
     justify-content: center; }
 
 .heading {
-  font-family: 'Roboto Slab', serif;
-  word-wrap: break-word;
-  font-size: 3rem; }
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  word-wrap: break-word; }
   .heading-um {
     margin-left: 20px;
     color: #fff; }
   .heading-home {
-    color: #000000; }
+    color: #000; }
     .heading-home-first {
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-size: 24px;
       transition: opacity 100ms ease-in-out 1s;
       animation-name: transition;
@@ -189,9 +189,9 @@ main {
 
 @keyframes transition {
   from {
-    opacity: 0.0; }
+    opacity: 0; }
   to {
-    opacity: 1.0; } }
+    opacity: 1; } }
     .heading-home-second {
       font-weight: 900;
       animation-name: transition;
@@ -212,71 +212,66 @@ main {
       margin-bottom: 100px; } }
 
 .kaupa {
-  animation-name: transition;
-  animation-duration: 13s;
-  font-size: 21px;
-  transition: background 500ms;
-  background-color: #585C57;
-  text-decoration: none;
-  margin: 50px;
   padding: 15px;
+  margin: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 21px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
-  border-radius: 5px; }
+  background-color: #585c57;
+  border-radius: 5px;
+  transition: background 500ms;
+  animation-name: transition;
+  animation-duration: 13s; }
 
 .kaupa:hover {
   background: #000; }
 
 .hlutur-2 {
-  height: 40px;
-  display: flex; }
+  display: flex;
+  height: 40px; }
 
-.hlutur img {
-  max-height: 100%;
+.hlutur-img {
   max-width: 100%;
+  max-height: 100%;
   margin-right: 10px; }
 
 .profile {
+  display: flex;
   width: 100%;
   height: 500px;
-  display: flex;
   flex-direction: column;
   justify-content: space-around; }
-  .profile img {
+  .profile-img {
     border-radius: 200px; }
-  .profile h3, .profile h4, .profile h5 {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif; }
-  .profile h3 {
+  .profile-h {
+    font-family: "Open Sans", sans-serif;
+    text-align: center; }
+  .profile-h3 {
     font-style: italic; }
 
 .home-footer {
-  font-family: 'Open Sans', sans-serif;
   display: flex;
+  margin: 50px 0;
+  font-family: "Open Sans", sans-serif;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  margin: 50px 0; }
+  align-items: center; }
 
 form {
   width: 100%;
   padding: 5em 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
-  form fieldset {
-    float: left;
-    border-style: none;
-    width: 50%; }
 
 #paymentinfo {
   overflow: auto; }
 
-/*form fieldset {
+form fieldset {
   float: left;
   border-style: none;
-  width: 50%;
-}*/
+  width: 50%; }
+
 #leftfieldset {
   padding: 0 9.5% 0 8.5%; }
 
