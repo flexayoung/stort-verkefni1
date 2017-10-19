@@ -181,16 +181,29 @@ main {
     color: #000000; }
     .heading-home-first {
       font-family: 'Open Sans', sans-serif;
-      font-size: 24px; }
+      font-size: 24px;
+      transition: opacity 100ms ease-in-out 1s;
+      animation-name: transition;
+      animation-duration: 3s; }
+
+@keyframes transition {
+  from {
+    opacity: 0.0; }
+  to {
+    opacity: 1.0; } }
     .heading-home-second {
-      font-weight: 900; }
+      font-weight: 900;
+      animation-name: transition;
+      animation-duration: 6s; }
 
 .kaupa {
+  animation-name: transition;
+  animation-duration: 13s;
   font-size: 21px;
   transition: background 500ms;
   background-color: #585C57;
   text-decoration: none;
-  margin: 20px;
+  margin: 50px;
   padding: 15px;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
