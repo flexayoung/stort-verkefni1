@@ -1,19 +1,26 @@
 form {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
   width: 100%;
-  padding: 5em 0 5em 0;
+  padding: 5em 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  fieldset {
+    float: left;
+    border-style: none;
+    width: 50%;
+  }
 }
 
 #paymentinfo {
   overflow: auto;
 
 }
-form fieldset {
+
+/*form fieldset {
   float: left;
   border-style: none;
   width: 50%;
-}
+}*/
 
 #leftfieldset {
   padding: 0 9.5% 0 8.5%;
@@ -39,7 +46,7 @@ legend {
 }
 
 input[type=text] {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   width: 100%;
   border: 1px solid #ccc;
@@ -48,7 +55,7 @@ input[type=text] {
 }
 
 select {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -57,7 +64,6 @@ select {
 }
 
 #monthdiv, #yeardiv {
-
   width: 50%;
   float: left;
 }

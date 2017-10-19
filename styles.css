@@ -123,36 +123,36 @@ main {
     margin-left: 0; } }
 
 .nav {
-  max-width: 1200px;
-  width: 100%;
-  background-color: #000;
   position: fixed;
   top: 0;
-  opacity: 0.8;
-  padding: 5px 20px 5px 20px; }
+  width: 100%;
+  max-width: 1200px;
+  padding: 5px 20px 5px 20px;
+  background-color: #000;
+  opacity: 0.8; }
   .nav a {
     padding: 5px;
+    font-family: "Roboto Slab", serif;
     color: #fff;
-    font-family: 'Roboto Slab', serif;
     text-decoration: none;
     border-radius: 5px; }
 
 .nav a:first-child {
-  font-weight: bold;
-  font-size: 21px; }
+  font-size: 21px;
+  font-weight: bold; }
 
 .nav a:nth-child(2) {
   float: right;
-  transition: background 500ms;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #585C57; }
+  font-family: "Open Sans", sans-serif;
+  background-color: #585c57;
+  transition: background 500ms; }
 
 .nav a:hover:nth-child(2) {
   background: #000; }
 
 .nav a:last-child {
   float: right;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .header {
   display: flex;
@@ -198,102 +198,6 @@ main {
       font-weight: 900;
       animation-name: transition;
       animation-duration: 6s; }
-
-.text {
-  font-family: open sans-serif; }
-  .text__p {
-    margin-bottom: 20px; }
-
-.button {
-  display: inline-block;
-  width: 100%;
-  max-width: 256px;
-  padding: 10px 5px;
-  margin: 0;
-  overflow: hidden;
-  font-family: Lato, helvetica, arial, sans-serif;
-  font-size: 1rem;
-  color: #eee;
-  text-align: center;
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  background-color: #666;
-  border: 1px solid #666;
-  border-radius: 4px;
-  transition: background-color 500ms ease, color 500ms ease; }
-  .button:hover {
-    color: #eee;
-    background-color: #333; }
-  .button--inverted {
-    color: #666;
-    background-color: #eee; }
-  .button--inverted:hover {
-    color: #333;
-    background-color: #ccc; }
-  .button--disabled, .button--disabled:hover {
-    color: #999;
-    background-color: #eee;
-    border-color: #eee; }
-
-.card {
-  width: 100%;
-  min-width: 200px;
-  max-width: 800px;
-  overflow: hidden;
-  background-color: #eee;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  transition: background-color 500ms ease; }
-  .card:hover {
-    background-color: #ddd; }
-  .card__heading {
-    width: 100%;
-    margin-bottom: 15px;
-    font-family: Merriweather, georgia, serif;
-    font-size: 1.5rem;
-    word-break: break-word; }
-  .card__content {
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-    align-items: center; }
-  .card__text {
-    margin-bottom: 30px; }
-  .card__img {
-    width: 100%;
-    min-width: 200px;
-    max-width: 100%; }
-  @media (min-width: 600px) {
-    .card--wide {
-      display: flex; } }
-  @media (min-width: 600px) {
-    .card--wide .card__content {
-      align-items: flex-start; } }
-  @media (min-width: 600px) {
-    .card--wide .card__img {
-      min-width: 400px;
-      height: 100%;
-      object-fit: cover; } }
-
-.cardlist__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px; }
-
-.cardlist__col {
-  width: 100%;
-  display: flex;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin: 0 0 20px; }
-  @media (min-width: 600px) {
-    .cardlist__col {
-      width: 50%;
-      margin-right: 0;
-      margin-left: 0; } }
 
 .row-section1 {
   margin-bottom: 100px; }
@@ -358,19 +262,23 @@ main {
   margin: 50px 0; }
 
 form {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
   width: 100%;
-  padding: 5em 0 5em 0; }
+  padding: 5em 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+  form fieldset {
+    float: left;
+    border-style: none;
+    width: 50%; }
 
 #paymentinfo {
   overflow: auto; }
 
-form fieldset {
+/*form fieldset {
   float: left;
   border-style: none;
-  width: 50%; }
-
+  width: 50%;
+}*/
 #leftfieldset {
   padding: 0 9.5% 0 8.5%; }
 
@@ -390,7 +298,7 @@ legend {
   float: left; }
 
 input[type=text] {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   width: 100%;
   border: 1px solid #ccc;
@@ -398,7 +306,7 @@ input[type=text] {
   border-radius: 4px; }
 
 select {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px; }
 
 #payment {
