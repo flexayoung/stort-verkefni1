@@ -13,9 +13,13 @@
   }
 
   &-home {
-    backgroungit stad-image: url("myndir/bg.jpg");
+<<<<<<< HEAD
+    background-image: url("myndir/bg.jpg");
+=======
+>>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
     min-height: 100vh;
     flex-direction: column;
+    background-image: url("myndir/bg.jpg");
     background-position: center;
     background-size: cover;
     justify-content: center;
