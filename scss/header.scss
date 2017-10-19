@@ -3,7 +3,7 @@
   max-width: $max-width;
   margin: 0 auto;
   margin-bottom: 100px;
-  min-height:100vh;
+  min-height:500px;
   align-items: center;
 
   &-um {
@@ -12,11 +12,15 @@
   }
   &-home {
     background-image: url(myndir/bg.jpg);
+    min-height:100vh;
+
     background-size: cover;
     flex-direction: column;
     justify-content: center;
 
   }
+
+
 }
 
 
