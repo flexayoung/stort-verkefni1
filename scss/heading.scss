@@ -22,16 +22,22 @@
     }
 
     &-kaupa {
-      font-size: 21px;
+      
+    }
+  }
+}
+
+.kaupa {
+  font-size: 21px;
       transition: background 500ms;
       background-color: #585C57;
       text-decoration: none;
-      margin: 50px;
+      margin: 20px;
       padding:15px;
       color:#fff;
       font-family: 'Open Sans', sans-serif;
       text-decoration:none;
       border-radius: 5px;
-    }
-  }
+
+
 }

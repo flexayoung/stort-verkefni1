@@ -71,6 +71,9 @@ blockquote {
 }
 
 main {
+
+  font-family: 'Roboto slab', serif;
+
   .grid:first-child {
   margin-top:(0.5/12*100) * 1%;
   }
@@ -102,9 +105,9 @@ main {
     text-align:center;
     color: #d3d3d3;
   }
+
+
 }
-
-
 
 
 
@@ -116,3 +119,8 @@ main {
 @import "scss/button";
 @import "scss/card";
 @import "scss/cardlist"; 
+@import "scss/home"; 
+
+
+
+
