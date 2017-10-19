@@ -26,7 +26,11 @@ img {
   max-width: 100%; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .quote blockquote {
+=======
+blockquote {
+>>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
 =======
 blockquote {
 >>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
@@ -50,9 +54,14 @@ main {
   overflow-x: hidden;
   font-family: "Roboto slab", serif; }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .grid:nth-child(2) {
   margin-top: 4.16667%; }
+=======
+  main .grid:first-child {
+    margin-top: 4.16667%; }
+>>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
 =======
   main .grid:first-child {
     margin-top: 4.16667%; }
@@ -155,6 +164,7 @@ main {
   display: flex;
   max-width: 1200px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: 500px;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -170,6 +180,8 @@ main {
     background-position: center;
     background-size: cover;
 =======
+=======
+>>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
   margin: 0 auto;
   margin-bottom: 100px;
   min-height: 500px;
@@ -184,6 +196,9 @@ main {
     background-position: center;
     background-size: cover;
     flex-direction: column;
+<<<<<<< HEAD
+>>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
+=======
 >>>>>>> cc9f22f65bd17f8c2d2aff3c6f7b948854b17211
     justify-content: center; }
 
