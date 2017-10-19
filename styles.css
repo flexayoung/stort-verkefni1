@@ -36,7 +36,7 @@ img {
   font-weight: bold; }
 
 @media (max-width: 400px) {
-  .quote blockquote {
+  .quote {
     min-width: 100%; } }
 
 main {
